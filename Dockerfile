@@ -8,7 +8,7 @@ COPY . /usr/src/vodacom/app/
 
 WORKDIR /usr/src/vodacom/app/
 
-RUN mvn clean install -Dhttp.proxyHost=zactn13001p1.vodacom.corp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=zactn13001p1.vodacom.corp -Dhttps.proxyPort=8080
+RUN mvn clean install -Dmaven.test.skip=true -Dhttp.proxyHost=zactn13001p1.vodacom.corp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=zactn13001p1.vodacom.corp -Dhttps.proxyPort=8080
 
 WORKDIR /usr/src/vodacom/app/target
 

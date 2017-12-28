@@ -10,4 +10,8 @@ WORKDIR /usr/src/vodacom/app/
 
 RUN mvn clean install -Dhttp.proxyHost=zactn13001p1.vodacom.corp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=zactn13001p1.vodacom.corp -Dhttps.proxyPort=8080
 
+WORKDIR /usr/src/vodacom/app/target
+
+ENTRYPOINT "java -jar SampleProject-0.0.1-SNAPSHOT.jar"
+
 EXPOSE 8080

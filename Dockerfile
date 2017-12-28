@@ -12,6 +12,6 @@ RUN mvn clean install -Dhttp.proxyHost=zactn13001p1.vodacom.corp -Dhttp.proxyPor
 
 WORKDIR /usr/src/vodacom/app/target
 
-CMD ["java","-jar","SampleProject-0.0.1-SNAPSHOT.jar"
+CMD ["java","-jar","SampleProject-0.0.1-SNAPSHOT.jar"]
 
 EXPOSE 8080

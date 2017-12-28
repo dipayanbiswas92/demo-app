@@ -1,7 +1,5 @@
 FROM openjdk:8-jdk
 
-ENV "HTTP_PROXY" "http://zactn13001p1.vodacom.corp:8080" "HTTPS_PROXY" "http://zactn13001p1.vodacom.corp:8080" "http_proxy" "http://zactn13001p1.vodacom.corp:8080"  "https_proxy" "http://zactn13001p1.vodacom.corp:8080" 
-
 LABEL maintainer "PPES DevOps Team <ppes.devops@accenture.com>" 
 
 RUN apt-get update && apt-get install -y maven curl

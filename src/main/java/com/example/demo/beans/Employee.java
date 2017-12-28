@@ -1,6 +1,6 @@
 package com.example.demo.beans;
 
-@Document(collection=”employees”)
+@Document(collection="employees")
 public class Employee {
  
     @Id
